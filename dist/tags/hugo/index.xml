@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on فناپ پرداخت</title>
+    <link>http://example.org/tags/hugo/</link>
+    <description>Recent content in Hugo on فناپ پرداخت</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fa-ir</language>
+    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>شروع به کار با هوگو</title>
+      <link>http://example.org/posts/hugoisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/hugoisforlovers/</guid>
+      <description>گام ۱. نصب هوگو به hugo releases بروید و نسخه مناسب برای سیستم‌عامل و معماری خودتان را انتخاب کنید.
+در محلی آن‌را ذخیره کنید که در گام‌های بعدی به آن نیاز خواهیم داشت.
+More complete instructions are available at installing hugo
+گام ۲. ساخت مستندات Hugo has its own example site which happens to also be the documentation site you are reading right now.
+Follow the following steps:
+ Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
+    </item>
+    
+  </channel>
+</rss>
