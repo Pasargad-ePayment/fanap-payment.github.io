@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on فناپ پرداخت</title>
-    <link>https://fanap-payment.github.io/blog/categories/</link>
+    <link>https://fanap-payment.github.io/blog/public/categories/</link>
     <description>Recent content in Categories on فناپ پرداخت</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fa-ir</language>
     
-	<atom:link href="https://fanap-payment.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fanap-payment.github.io/blog/public/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Development</title>
-      <link>https://fanap-payment.github.io/blog/categories/development/</link>
+      <link>https://fanap-payment.github.io/blog/public/categories/development/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://fanap-payment.github.io/blog/categories/development/</guid>
+      <guid>https://fanap-payment.github.io/blog/public/categories/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Golang</title>
-      <link>https://fanap-payment.github.io/blog/categories/golang/</link>
+      <link>https://fanap-payment.github.io/blog/public/categories/golang/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://fanap-payment.github.io/blog/categories/golang/</guid>
+      <guid>https://fanap-payment.github.io/blog/public/categories/golang/</guid>
       <description></description>
     </item>
     
