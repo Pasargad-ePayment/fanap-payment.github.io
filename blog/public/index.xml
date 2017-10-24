@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>فناپ پرداخت</title>
+    <link>https://fanap-payment.github.io/blog/</link>
+    <description>Recent content on فناپ پرداخت</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fa-ir</language>
+    <lastBuildDate>Sat, 01 Apr 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://fanap-payment.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>نمونه بزرگنمایی تصویر</title>
+      <link>https://fanap-payment.github.io/blog/posts/image-zoom-sample/</link>
+      <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://fanap-payment.github.io/blog/posts/image-zoom-sample/</guid>
+      <description>این تم شبیه سایت مدیوم طراحی شده.
+از پلاگین جی‌کوئری Zoom.js استفاده شده است.</description>
+    </item>
+    
+    <item>
+      <title>وبلاگ فناپ پرداخت</title>
+      <link>https://fanap-payment.github.io/blog/about/</link>
+      <pubDate>Tue, 10 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://fanap-payment.github.io/blog/about/</guid>
+      <description>در جلسه اخیر کمیته فنی تصمیم گرفتیم که این وبلاگ
+Hugo is a static site engine written in Go.
+It makes use of a variety of open source projects including:
+ Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.</description>
+    </item>
+    
+    <item>
+      <title>شروع به کار با هوگو</title>
+      <link>https://fanap-payment.github.io/blog/posts/hugoisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://fanap-payment.github.io/blog/posts/hugoisforlovers/</guid>
+      <description>گام ۱. نصب هوگو به hugo releases بروید و نسخه مناسب برای سیستم‌عامل و معماری خودتان را انتخاب کنید.
+در محلی آن‌را ذخیره کنید که در گام‌های بعدی به آن نیاز خواهیم داشت.
+More complete instructions are available at installing hugo
+گام ۲. ساخت مستندات Hugo has its own example site which happens to also be the documentation site you are reading right now.
+Follow the following steps:
+ Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
+    </item>
+    
+  </channel>
+</rss>
