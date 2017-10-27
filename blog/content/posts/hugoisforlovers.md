@@ -17,12 +17,14 @@ menu = "main"
 
 ## گام ۱. نصب هوگو
 
-به [hugo releases](https://github.com/spf13/hugo/releases) 
+به [انتشارهای هوگو](https://github.com/spf13/hugo/releases) 
 بروید و نسخه مناسب برای سیستم‌عامل و معماری خودتان را انتخاب کنید.
 
-در محلی آن‌را ذخیره کنید که در گام‌های بعدی به آن نیاز خواهیم داشت.
+در محلی آن را ذخیره کنید که در گام‌های بعدی به آن نیاز خواهیم داشت.
 
-More complete instructions are available at [installing hugo](/overview/installing/)
+با کلیک روی این لینک راهنمای کامل‌تری برای 
+ [نصب هوگو](/overview/installing/)
+را می‌توانید بخوانید.
 
 ## گام ۲. ساخت مستندات
 

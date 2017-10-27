@@ -1,21 +1,21 @@
 +++
-title = "وبلاگ فناپ پرداخت"
+title = "درباره اینجا"
 date = "2017-10-10"
 menu = "main"
 +++
 
-در جلسه اخیر کمیته فنی تصمیم گرفتیم که این وبلاگ
- 
+در نشست ۱۸ مهرماه ۱۳۹۶ 
+(۱۰ اکتبر ۲۰۱۷)
+مقرر شد که فناپ پرداخت یک وبلاگ برای اشتراک‌گذاری تجربیات
+و هر چیزی که به نظر می‌رسد که به هر طریقی برای دیگران مفید باشد
+ داشته باشد.
 
-Hugo is a static site engine written in Go.
+چیزی که پیش روی شماست حاصل همین تصمیم است.
 
+اگر مایل هستید که در توسعه محتویات اینجا مشارکت کنید، 
+لطفا  مقاله خود را با کمک نوشتار
+`markdown`
+در فولدر content در مخزن زیر
+بنویسید و درخواست pull request ثبت کنید.
 
-It makes use of a variety of open source projects including:
-
-* [Cobra](https://github.com/spf13/cobra)
-* [Viper](https://github.com/spf13/viper)
-* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
-* [Cast](https://github.com/spf13/cast)
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
-
+https://github.com/fanap-payment/fanap-payment.github.io
