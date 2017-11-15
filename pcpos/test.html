@@ -1,0 +1,93 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8" /><title>
+	Home Page - My ASP.NET Application
+</title>
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" /><meta name="viewport" content="width=device-width" />
+    <script src="Scripts/jquery-1.7.1.js"></script>
+    
+
+</head>
+<body>
+    <form method="post" action="Default.aspx" id="ctl01">
+
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['ctl01'];
+if (!theForm) {
+    theForm = document.ctl01;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+
+
+<div class="aspNetHidden">
+
+	
+</div>
+
+    
+      <input type="text" id="url">
+    <input type="button" onclick="ajaxCmd()">
+    <div id="textJson">test</div>
+
+
+    <script>
+        function ajaxCmd() {
+            var url = 'http://10.21.31.51:9000/V1/sale';//$("#url").val();
+            var jsonVal = {
+                Price: "10000",
+                ComPort: "Com13",
+                EvoucheOperator: "1",
+                BillID: "545454521",
+                BillPaymentID: "124476891",
+                IsLan: "FALSE",
+                Ip: "10.22.25.230",
+                Port: "7000"
+            };
+
+
+            var self = this;
+            return $.ajax({
+                type: "post",
+                
+                crossDomain: true,
+                url: url,
+                timeout:500000,
+                dataType: 'json',
+                async: true,
+                data: jsonVal,
+                success: function (msg) {
+                    console.log(JSON.stringify(msg));
+                    console.log(JSON.toSource(msg));
+                    $('#textJson').text(JSON.stringify(msg));
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    alert("error");
+                },
+                complete: function () {
+                    alert("complete");
+                }
+            });
+        }
+    </script>
+
+
+        </section>
+    </div>
+    
+    </form>
+</body>
+</html>
