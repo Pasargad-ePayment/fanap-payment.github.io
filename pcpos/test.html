@@ -3,59 +3,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8" /><title>
-	Home Page - My ASP.NET Application
+	Web PCPOS Test Page
 </title>
-<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" /><meta name="viewport" content="width=device-width" />
     <script src="Scripts/jquery-1.7.1.js"></script>
-    
 
 </head>
 <body>
-    <form method="post" action="Default.aspx" id="ctl01">
 
 
-<script type="text/javascript">
-//<![CDATA[
-var theForm = document.forms['ctl01'];
-if (!theForm) {
-    theForm = document.ctl01;
-}
-function __doPostBack(eventTarget, eventArgument) {
-    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-        theForm.__EVENTTARGET.value = eventTarget;
-        theForm.__EVENTARGUMENT.value = eventArgument;
-        theForm.submit();
-    }
-}
-//]]>
-</script>
+    <section id="Info">
+        <div>URL</div>
+        <input type="text" id="url" value = "http://10.21.31.51:9000/V1/sale">
+        <div>Amount</div>
+        <input type="text" id="amount" value = "10000">
+        <div>Com Port</div>        
+        <input type="text" id="com_port" value = "Com3">
+        
+        <div>Operator</div>
+        <select id="operator_type" >
+          <option value="1">MCI</option>
+          <option value="2">MTN</option>
+        </select>
 
+        <div>Bill ID</div>
+        <input type="text" id="bill_id" value = "545454521">
 
+        <div>Bill Payment ID</div>
+        <input type="text" id="bill_paymetn_id" value = "124476891">
 
+        <div>Is Lan</div>
+        <select id="is_Lan" >
+            <option value="False">No</option>
+            <option value="True">Yes</option>
+        </select>
 
-<div class="aspNetHidden">
+        <div>POS IP</div>
+        <input type="text" id="pos_ip" value = "10.22.25.230">
 
-	
-</div>
+        <div>POS Port</div>
+        <input type="text" id="pos_port" value = "7000">
 
+        <input type="button" onclick="ajaxCmd()" value="Run">
+    </section>
     
-      <input type="text" id="url">
-    <input type="button" onclick="ajaxCmd()">
-    <div id="textJson">test</div>
+    <section id="Results">
+    <div id="textJson">Results</div>
+    <code id="result"></code>
+    </section>
 
 
     <script>
         function ajaxCmd() {
-            var url = 'http://10.21.31.51:9000/V1/sale';//$("#url").val();
+            var url = $("#url").val();
             var jsonVal = {
-                Price: "10000",
-                ComPort: "Com13",
-                EvoucheOperator: "1",
-                BillID: "545454521",
-                BillPaymentID: "124476891",
-                IsLan: "FALSE",
-                Ip: "10.22.25.230",
-                Port: "7000"
+                Price: $("#amount").val(),
+                ComPort: $("#com_port").val(),
+                EvoucheOperator: $("#operator_type").val(),
+                BillID: $("#bill_id").val(),
+                BillPaymentID: $("#bill_paymetn_id").val(),
+                IsLan: $("#is_Lan").val(),
+                Ip: $("#pos_ip").val(),
+                Port: $("#pos_port").val()
             };
 
 
@@ -70,9 +78,12 @@ function __doPostBack(eventTarget, eventArgument) {
                 async: true,
                 data: jsonVal,
                 success: function (msg) {
-                    console.log(JSON.stringify(msg));
-                    console.log(JSON.toSource(msg));
-                    $('#textJson').text(JSON.stringify(msg));
+                    if(msg != null){
+                        console.log(JSON.stringify(msg));
+                        //console.log(JSON.toSource(msg));
+                        $('#result').empty();
+            			$('#result').append(JSON.stringify(msg,null, 4));
+                    }
                 },
                 error: function (XMLHttpRequest, textStatus, errorThrown) {
                     alert("error");
